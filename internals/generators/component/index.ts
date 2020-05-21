@@ -77,6 +77,12 @@ export const componentGenerator: PlopGenerator = {
         templateFile: './component/index.tsx.hbs',
         abortOnFail: true,
       },
+      {
+        type: 'add',
+        path: `${containerPath}/index.stories.tsx`,
+        templateFile: './component/index.stories.tsx.hbs',
+        abortOnFail: true,
+      },
     ];
 
     if (data.wantLoadable) {
