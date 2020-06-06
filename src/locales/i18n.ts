@@ -1,8 +1,6 @@
 import i18next from 'i18next';
-import { initReactI18next } from 'react-i18next';
-
 import LanguageDetector from 'i18next-browser-languagedetector';
-
+import { initReactI18next } from 'react-i18next';
 import en from './en/translation.json';
 import { ConvertedToFunctionsType } from './types';
 
@@ -24,7 +22,7 @@ export const translations: ConvertedToFunctionsType<TranslationResource> = {} as
  * along with type-safety
  */
 const convertToFunctions = (obj: any, dict: {}, current?: string) => {
-  Object.keys(obj).forEach(key => {
+  Object.keys(obj).forEach((key) => {
     const currentLookupKey = current ? `${current}.${key}` : key;
     if (typeof obj[key] === 'object') {
       dict[key] = {};

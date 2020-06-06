@@ -5,22 +5,17 @@
  * code.
  */
 
-import 'react-app-polyfill/ie11';
-import 'react-app-polyfill/stable';
-
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import * as serviceWorker from 'serviceWorker';
-import 'sanitize.css/sanitize.css';
-
 // Import root app
 import { App } from 'app';
-
+import * as React from 'react';
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+import * as ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';
-
+import { Provider } from 'react-redux';
+import 'sanitize.css/sanitize.css';
+import * as serviceWorker from 'serviceWorker';
 import { configureAppStore } from 'store/configureStore';
-
 // Initialize languages
 import './locales/i18n';
 

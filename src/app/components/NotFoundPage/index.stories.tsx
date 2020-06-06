@@ -1,6 +1,6 @@
 import React from 'react';
-import { NotFoundPage } from './index';
 import { HelmetProvider } from 'react-helmet-async';
+import { NotFoundPage } from './index';
 
 export default {
   title: 'NotFound',
