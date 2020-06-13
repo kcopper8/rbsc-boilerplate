@@ -11,8 +11,9 @@ module.exports = {
     'prettier',
     'prettier/react',
     'prettier/@typescript-eslint',
+    'plugin:cypress/recommended',
   ],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'cypress'],
   rules: {
     'prettier/prettier': ['error', prettierOptions],
   },
@@ -22,4 +23,7 @@ module.exports = {
       rules: { 'prettier/prettier': ['warn', prettierOptions] },
     },
   ],
+  env: {
+    'cypress/globals': true,
+  },
 };
